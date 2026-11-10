@@ -1,0 +1,15 @@
+[project]
+name = "part-06-first-mcp-server"
+version = "0.1.0"
+description = "A beginner-friendly MCP server using FastMCP and stdio."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = ["mcp[cli]>=1.28,<2"]
+
+[dependency-groups]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
