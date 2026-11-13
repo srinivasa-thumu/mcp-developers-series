@@ -1,0 +1,13 @@
+[project]
+name = "part-07-first-mcp-client"
+version = "0.1.0"
+description = "A beginner-friendly MCP client that connects to the Part 6 server over stdio."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = ["mcp>=1.28,<2"]
+
+[dependency-groups]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
