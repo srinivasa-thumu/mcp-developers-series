@@ -1,0 +1,14 @@
+[project]
+name = "part-08-langchain-mcp-integration"
+version = "0.1.0"
+description = "Discover and invoke Part 6 MCP tools through LangChain."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = ["langchain[mcp]>=1.4.0,<2"]
+
+[dependency-groups]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
