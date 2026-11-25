@@ -1,0 +1,18 @@
+[project]
+name = "part-09-langgraph-mcp-agent"
+version = "0.1.0"
+description = "A LangGraph customer assistant using the existing MCP server."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "langchain[mcp]>=1.4.0,<2",
+    "langchain-ollama>=1.0.0,<2",
+    "langgraph>=1.0.0,<2",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
